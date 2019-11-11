@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:text="新款奔驰威霆遵循一贯的优雅尊贵个性，其全体外型大气沉稳。新一代威霆设计变化主要集中在前脸，中央进气格栅尺寸更大，黑色塑料材质看上去也比较有质感，下进气格栅则采用长条式设计，相比老款车型更加协调。奔驰威霆继承了奔驰品豪华的气质与优良的做工，是一款较为实用的MPV车型，性价比较高，可以满足消费者对空间的要求。"/>
-
-    <com.deep.androidexample.MaskCutView
-        android:id="@+id/follow_up_dialog_view"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="60dp"
+        android:text="挖空半透明区域"
+        android:onClick="clickMaskCut"/>
 
-</FrameLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="带阴影的浮层"
+        android:onClick="clickShadow"/>
+
+</LinearLayout>

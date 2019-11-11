@@ -1,4 +1,4 @@
-package com.deep.androidexample;
+package com.deep.androidexample.maskcut;
 
 import android.content.Context;
 import android.graphics.Canvas;
